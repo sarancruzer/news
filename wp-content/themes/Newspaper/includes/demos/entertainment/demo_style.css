@@ -1,0 +1,82 @@
+/*  ----------------------------------------------------------------------------
+    responsive settings
+*/
+/* responsive landscape tablet */
+/* responsive portrait tablet */
+/* responsive portrait phone */
+.mx_image_background {
+  background-color: #f2f2f2;
+}
+.td-visibility-hidden {
+  visibility: hidden;
+}
+/*  ----------------------------------------------------------------------------
+    from bootstrap
+*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+usage:
+.td-block-row {
+  .mx-row(td-block-span);
+}
+
+@all_span_selector - is the begining of the span selector
+ */
+.td-entertainment .td_block_slide .td-image-gradient:before {
+  height: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.3)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  /* W3C */
+}
+.td-entertainment .td_block_slide .td-module-thumb {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.td-entertainment .td_block_slide .entry-title {
+  margin-bottom: 20px;
+}
+.td-entertainment .td_block_slide .td-slide-meta {
+  width: 1200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 32px;
+  padding: 0;
+}
+.td-entertainment .td_block_template_5 .td-block-title {
+  margin-bottom: 32px;
+  margin-left: -16px;
+}
+.td-entertainment .td_block_template_5 .td-block-title > * {
+  border-left-width: 3px;
+}
+.td-entertainment .td-entertainment-block {
+  overflow: initial;
+  /* responsive tablet + desktop */
+}
+@media (min-width: 767px) {
+  .td-entertainment .td-entertainment-block .td-module-thumb {
+    margin-left: calc((157% - 100vw) / 2);
+    height: 500px;
+  }
+}
